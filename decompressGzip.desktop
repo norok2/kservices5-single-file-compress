@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/gzip;
+Actions=decompress;
+
+
+[Desktop Action decompress]
+Name=Decompress with gzip
+Icon=package-x-generic
+Exec=gzip -d %f

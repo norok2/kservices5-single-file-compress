@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/x-lrzip;
+Actions=decompress;
+
+
+[Desktop Action decompress]
+Name=Decompress with Lrzip
+Icon=package-x-generic
+Exec=lrzip -Dd %f

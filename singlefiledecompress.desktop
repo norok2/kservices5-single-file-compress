@@ -1,0 +1,44 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/octet-stream;
+Actions=decompressGzip;decompressBzip2;decompressLzip;decompressXz;decompressRzip;decompressLrzip
+X-KDE-Submenu=Decompress with
+X-KDE-StartupNotify=false
+X-KDE-Priority=TopLevel
+
+
+[Desktop Action decompressGzip]
+Name=gzip
+Icon=package-x-generic
+Exec=gzip -d %f
+
+
+[Desktop Action decompressBzip2]
+Name=bzip2
+Icon=package-x-generic
+Exec=bzip2 -d %f
+
+
+[Desktop Action decompressLzip]
+Name=lzip
+Icon=package-x-generic
+Exec=lzip -d %f
+
+
+[Desktop Action decompressXz]
+Name=xz
+Icon=package-x-generic
+Exec=xz -d %f
+
+
+[Desktop Action decompressRzip]
+Name=rzip
+Icon=package-x-generic
+Exec=rzip -d %f
+
+
+[Desktop Action decompressLrzip]
+Name=lrzip
+Icon=package-x-generic
+Exec=lrzip -Dd %f
