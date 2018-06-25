@@ -2,7 +2,7 @@
 Type=Service
 ServiceTypes=KonqPopupMenu/Plugin
 MimeType=application/octet-stream;
-Actions=compressGzip;compressBzip2;compressLzip;compressXz;compressRzip;compressLrzip;
+Actions=compressGzip;compressPigz;compressZopfli;compressBzip2;compressLzip;compressXz;compressRzip;compressLrzip;
 X-KDE-Submenu=Compress with
 X-KDE-StartupNotify=false
 X-KDE-Priority=TopLevel
@@ -12,6 +12,18 @@ X-KDE-Priority=TopLevel
 Name=gzip
 Icon=package-x-generic
 Exec=gzip -9 %f
+
+
+[Desktop Action compressPigz]
+Name=pigz (parallel gzip)
+Icon=package-x-generic
+Exec=pigz -9 %f
+
+
+[Desktop Action compressZopfli]
+Name=pigz (parallel zopfli)
+Icon=package-x-generic
+Exec=pigz -11 %f
 
 
 [Desktop Action compressBzip2]
